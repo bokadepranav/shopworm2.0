@@ -21,7 +21,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Server folder
-/server/*
+# /server/*
 /server/node_modules
 /server/.pnp
 /server.pnp.js
