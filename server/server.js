@@ -2,6 +2,7 @@
 
 const mongoose = require('mongoose');
 const express = require('express');
+const cors = require('cors');
 const authRoutes = require('./routes/authRoutes');
 // mongoDb connection
 
@@ -20,6 +21,7 @@ mongoose.connect(mongoURI, {
 // -- server api
 
 const app = express();
+app.use(cors());
 app.use(express.json()); // middleware to parse res.body data
 
 app.use('/auth', authRoutes);

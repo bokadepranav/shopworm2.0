@@ -27,10 +27,12 @@ exports.login = async (req, res) => {
   try {
     const existingUser = await User.findOne({ username });
     if (!existingUser) {
+      console.log('--user not found')
       return res.status(401).json({ message: "Invalid credentials" });
     }
 
     const isMatch = await bcrypt.compare(password, existingUser.password);
+    console.log("ismatch" , isMatch)
     if (isMatch) {
       return res.status(200).json({ message: "Login successful" });
     } else {
