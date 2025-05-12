@@ -4,8 +4,33 @@
     ],
     "products": [
         {
+            "id": "bag_1",
+            "name": "Brown Quilted Satchel",
+            "brand": "Gucci",
+            "description": "",
+            "category": "bags",
+            "price": "78",
+            "price_currency": "USD",
+            "min_offer_price": "39",
+            "star_rating": 4.5,
+            "num_rating": 150,
             "imgPath": "../assets/products/bags/3.jpg",
-            "": ""
+            "has_variations": false,
+            "variations": []
+        },
+        {
+            "id": "",
+            "name": "",
+            "brand": "",
+            "description": "",
+            "category": "",
+            "price": 0,
+            "price_currency": "",
+            "star_rating": 5,
+            "num_rating": 100,
+            "imgPath": "../assets/products/",
+            "has_variations": false,
+            "variations": ["id1", "id2"]
         }
     ]
 }
