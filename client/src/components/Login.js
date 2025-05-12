@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import bag from "../assets/products/bags/3.jpg";
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -65,6 +66,7 @@ export default function Login() {
       <div className="mb-3">
         <button className="btn btn-primary" onClick={handleLoginBtn}>Login</button>
       </div>
+      <img src={bag} alt="" />
     </div>
   );
 }

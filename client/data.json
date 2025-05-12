@@ -1,0 +1,11 @@
+{
+    "categories": [
+        "bags", "glasses", "men", "women", "watches", "shoes"
+    ],
+    "products": [
+        {
+            "imgPath": "../assets/products/bags/3.jpg",
+            "": ""
+        }
+    ]
+}
