@@ -1,0 +1,179 @@
+MERN ECOMMERCE PROJECT ROADMAP
+===============================
+
+TECH STACK:
+-----------
+Frontend: React.js
+Backend: Node.js + Express.js
+Database: MongoDB (with Mongoose)
+Deployment: Vercel (frontend), Render/Render (backend), MongoDB Atlas (database)
+
+PHASE-BY-PHASE ROADMAP
+=======================
+
+PHASE 1: Project Setup
+-----------------------
+- Create root folder with /client and /server subfolders.
+- Initialize React using Vite or Create React App.
+- Initialize Node backend with Express and basic API route.
+- Connect React to Express using proxy or CORS.
+- Set up GitHub repo and optionally deploy both sides.
+
+PHASE 2: Authentication (Login/Register)
+----------------------------------------
+- Setup MongoDB + Mongoose
+- Create User model with fields: name, email, password (hashed), isAdmin
+- Create API routes: /api/auth/register, /api/auth/login
+- Use bcrypt for password hashing
+- Generate and return JWT on login
+- Protect routes using JWT middleware
+- Frontend: Create login & register forms
+- Store JWT in localStorage and attach in Axios headers
+
+PHASE 3: Product Listing and Details
+------------------------------------
+- Create Product model: name, price, description, category, stock, images, reviews
+- Seed products into MongoDB
+- Create API: /api/products (get all), /api/products/:id (get one)
+- Frontend: Display products in grid with individual product page
+
+PHASE 4: Cart System
+---------------------
+- Implement Context API or Redux for cart state
+- Add to cart, remove from cart, quantity update
+- Store cart in localStorage
+- Create Cart page with subtotal and total
+
+PHASE 5: Checkout + Orders
+---------------------------
+- Create Order model: userId, products (array), totalAmount, address, isPaid, status
+- Frontend: Address form + order summary
+- Backend: Create Order API (/api/orders)
+- Store and fetch user’s order history
+
+PHASE 6: Admin Panel
+---------------------
+- Add isAdmin flag to User model
+- Admin APIs: Get all users, products, orders, delete user/product, etc.
+- Frontend: Admin dashboard with sections for users, products, orders
+
+PHASE 7: Payment Integration
+-----------------------------
+- Use Razorpay or Stripe API for payment
+- Frontend: Create payment form/button
+- Backend: Create order verification route
+- Mark order as paid after payment confirmation
+
+PHASE 8: Polish & Deployment
+-----------------------------
+- Error handling, loading spinners, form validation
+- Secure all API routes with proper middlewares
+- Optimize frontend performance
+- Deploy backend (Render), frontend (Vercel), DB (MongoDB Atlas)
+
+PHASE 9: Optional Enhancements
+-------------------------------
+- Search and Filter
+- Ratings and Reviews
+- Wishlist
+- Email Notifications
+
+PROJECT FOLDER STRUCTURE
+=========================
+
+/ecommerce-app
+|-- /client
+|   |-- /src
+|   |   |-- /components
+|   |   |-- /pages
+|   |   |-- /context or /redux
+|   |   |-- App.jsx
+|   |-- package.json
+|-- /server
+|   |-- /controllers
+|   |-- /models
+|   |-- /routes
+|   |-- /middleware
+|   |-- server.js
+|   |-- .env
+|-- README.md
+
+DATABASE SCHEMAS
+==================
+
+User:
+{
+  name: String,
+  email: String (unique),
+  passwordHash: String,
+  isAdmin: Boolean,
+  addresses: [ {...} ]
+}
+
+Product:
+{
+  name: String,
+  description: String,
+  price: Number,
+  images: [String],
+  category: String,
+  stockCount: Number,
+  ratings: Number,
+  reviews: [ { userId, comment, rating } ]
+}
+
+Order:
+{
+  userId: ObjectId,
+  products: [{ productId, quantity }],
+  totalAmount: Number,
+  shippingAddress: Object,
+  isPaid: Boolean,
+  paidAt: Date,
+  status: String
+}
+
+API LISTS
+==========
+
+AUTH:
+POST /api/auth/register
+POST /api/auth/login
+GET  /api/auth/me
+
+PRODUCTS:
+GET /api/products
+GET /api/products/:id
+POST /api/products (admin)
+PUT /api/products/:id (admin)
+DELETE /api/products/:id (admin)
+
+ORDERS:
+POST /api/orders
+GET /api/orders/my (user)
+GET /api/orders (admin)
+PUT /api/orders/:id/status (admin)
+
+PAYMENTS:
+POST /api/pay (Stripe or Razorpay)
+POST /api/payment/verify
+
+PROCESS FLOW (Frontend)
+========================
+- User lands on Home → sees Product List
+- Clicks on Product → Product Detail Page
+- Adds to Cart → Goes to Cart Page
+- Proceeds to Checkout → Enters Address
+- Pays (Phase 7) → Gets Order Confirmation
+- Views Order History
+
+SYSTEM ARCHITECTURE
+====================
+
+Frontend (React) → calls → Backend (Node.js + Express) → reads/writes → MongoDB
+
+- Auth handled via JWT tokens stored in localStorage
+- Axios handles frontend HTTP calls with auth headers
+- All sensitive routes are protected by middleware
+
+--- END OF ROADMAP ---
