@@ -82,21 +82,35 @@ PROJECT FOLDER STRUCTURE
 =========================
 
 /ecommerce-app
-|-- /client
-|   |-- /src
-|   |   |-- /components
-|   |   |-- /pages
-|   |   |-- /context or /redux
-|   |   |-- App.jsx
-|   |-- package.json
-|-- /server
-|   |-- /controllers
-|   |-- /models
-|   |-- /routes
-|   |-- /middleware
-|   |-- server.js
-|   |-- .env
-|-- README.md
+  /client
+    /src
+      /components
+        Navbar.jsx
+        Footer.jsx
+        ProductCard.jsx
+        ...
+
+      /pages
+        HomePage.jsx
+        LoginPage.jsx
+        ProductPage.jsx
+        CartPage.jsx
+        ...
+
+      /context (or /redux)
+      /services (API calls)
+      /routes
+        App.jsx
+        main.jsx
+
+  /server
+    /controllers
+      /models
+      /routes
+      /middleware
+      server.js
+      .env
+ README.md
 
 DATABASE SCHEMAS
 ==================
