@@ -15,6 +15,8 @@
   padding: 20px 80px;
   align-items: center;
   background-color: var(--blue);
+  justify-content: space-between;
+  column-gap: 20px;
 }
 
 .navbar-logo {
@@ -41,4 +43,77 @@
   border: 1px solid transparent;
   border-radius: 30px;
   outline: none;
+  font-family: 'Spartan', sans-serif;
+}
+
+.search-bar-btn {
+  background-color: var(--white);
+  border: 0px;
+  outline: none;
+  padding: 0px 15px;
+  border-radius: 0px 30px 30px 0px;
+  margin-left: -50px;
+}
+
+.search-bar-icon {
+  font-size: 20px;
+  color: var(--blue);
+}
+
+/* ---------- navbar login section ---------- */
+.navbar-login-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-login-user-btn {
+  background-color: var(--blue);
+  border: 0px;
+  outline: none;
+  padding: 0px 10px;
+}
+
+.navbar-login-user-btn-icon {
+  color: var(--white);
+  font-size: 30px;
+}
+
+.navbar-login-user-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Spartan', sans-serif;
+}
+
+.navbar-login-user-greetings {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.navbar-login-user-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.navbar-menu-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+/* ---------- navbar menu buttons ---------- */
+.navbar-menu-btn {
+  background-color: var(--white);
+  border: 0px;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  width: 44px;
+}
+
+.navbar-menu-btn-icon {
+  font-size: 20px;
+  color: var(--blue);
 }
