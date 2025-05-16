@@ -5,6 +5,7 @@
 :root {
   --blue : #2370f4;
   --white : white;
+  --black : #1a1a1a;
 }
 
 /* ---------- Navbar ---------- */
@@ -116,4 +117,30 @@
 .navbar-menu-btn-icon {
   font-size: 20px;
   color: var(--blue);
+}
+
+/* ---------- menubar ---------- */
+
+.menubar-container {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.menubar-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  padding: 10px 0px;
+}
+
+.menubar-item-link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.menubar-item {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Spartan', sans-serif;
 }
