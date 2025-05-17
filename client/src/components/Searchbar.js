@@ -5,11 +5,11 @@ export default function Searchbar() {
     <div className="search-bar-wrapper">
       <input
         type="text"
-        className="search-bar-input"
+        className="search-bar-input text color-black text-font"
         placeholder="Search for products, categories, brand, etc."
       />
-      <button className="search-bar-btn">
-        <i className="fa-solid fa-magnifying-glass search-bar-icon" />
+      <button className="search-bar-btn background-color-white">
+        <i className="fa-solid fa-magnifying-glass search-bar-icon color-blue" />
       </button>
     </div>
   );

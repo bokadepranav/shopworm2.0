@@ -15,7 +15,7 @@ export default function Navbar() {const [activePage, setActivePage] = useState("
         {menuItems.map((item) => (
           <Link to={`/${item.toLowerCase()}`} className="navbar-item-link" key={item}>
             <span
-              className={`navbar-item ${activePage === item ? "active" : ""}`}
+              className={`navbar-item text bold color-black text-font ${activePage === item ? "active" : ""}`}
               onClick={() => handleLinkClick(item)}
               id={item}
             >
