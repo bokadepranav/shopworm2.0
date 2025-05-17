@@ -144,3 +144,19 @@
   font-weight: 600;
   font-family: 'Spartan', sans-serif;
 }
+
+.menubar-item.active {
+  color: var(--blue);
+}
+
+.menubar-item.active::after {
+  content: "";
+  background-color: var(--blue);
+  width: 60%;
+  position: relative;
+  height: 3px;
+  left: 0px;
+  bottom: 0px;
+  display: block;
+  border-radius: 3px;
+}
