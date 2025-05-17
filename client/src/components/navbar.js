@@ -15,8 +15,8 @@ export default function Navbar() {
           </div>
         </div>
         <div className="navbar-menu-btn-wrapper">
-          <button className="navbar-menu-btn"><i class="fa-solid fa-heart navbar-menu-btn-icon"></i></button>
-          <button className="navbar-menu-btn"><i class="fa-solid fa-cart-shopping navbar-menu-btn-icon"></i></button>
+          <button className="navbar-menu-btn"><i className="fa-solid fa-heart navbar-menu-btn-icon"></i></button>
+          <button className="navbar-menu-btn"><i className="fa-solid fa-cart-shopping navbar-menu-btn-icon"></i></button>
         </div>
       </div>
     </section>

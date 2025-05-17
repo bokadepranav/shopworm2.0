@@ -1,35 +1,29 @@
 import React, { useState } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Menubar() {
-
-  const [activePage, setActivePage] = useState(document.getElementById("HOME"));
+  const [activePage, setActivePage] = useState("HOME");
 
   const handleLinkClick = (currPage) => {
-    activePage.classList.remove("active");
+    setActivePage(currPage);
+  };
 
-    setActivePage(document.getElementById(currPage));
-    activePage.classList.add("active");
-  }
+  const menuItems = ["HOME", "SHOP", "BLOG", "ABOUT", "CONTACT"];
 
   return (
     <div className="menubar-container">
       <div className="menubar-item-wrapper">
-        <Link to="/" className="menubar-item-link">
-          <span className="menubar-item active" onClick={handleLinkClick} id="HOME">HOME</span>
-        </Link>
-        <Link to="/" className="menubar-item-link">
-          <span className="menubar-item" onClick={handleLinkClick} id="SHOP">SHOP</span>
-        </Link>
-        <Link to="/" className="menubar-item-link">
-          <span className="menubar-item" onClick={handleLinkClick} id="BLOG">BLOG</span>
-        </Link>
-        <Link to="/" className="menubar-item-link">
-          <span className="menubar-item" onClick={handleLinkClick} id="ABOUT">ABOUT</span>
-        </Link>
-        <Link to="/" className="menubar-item-link">
-          <span className="menubar-item" onClick={handleLinkClick} id="CONTACT">CONTACT</span>
-        </Link>
+        {menuItems.map((item) => (
+          <Link to={`/${item.toLowerCase()}`} className="menubar-item-link" key={item}>
+            <span
+              className={`menubar-item ${activePage === item ? "active" : ""}`}
+              onClick={() => handleLinkClick(item)}
+              id={item}
+            >
+              {item}
+            </span>
+          </Link>
+        ))}
       </div>
     </div>
   );
