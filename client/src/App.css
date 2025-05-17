@@ -8,9 +8,9 @@
   --black : #1a1a1a;
 }
 
-/* ---------- Navbar ---------- */
+/* ---------- menubar ---------- */
 
-.navbar-wrapper {
+.menubar-wrapper {
   display: flex;
   flex-direction: row;
   padding: 20px 80px;
@@ -20,7 +20,7 @@
   column-gap: 20px;
 }
 
-.navbar-logo {
+.menubar-logo {
   font-family: 'Courgette', cursive;
   color: var(--white);
   font-size: 46px;
@@ -61,51 +61,51 @@
   color: var(--blue);
 }
 
-/* ---------- navbar login section ---------- */
-.navbar-login-wrapper {
+/* ---------- menubar login section ---------- */
+.menubar-login-wrapper {
   display: flex;
   flex-direction: row;
 }
 
-.navbar-login-user-btn {
+.menubar-login-user-btn {
   background-color: var(--blue);
   border: 0px;
   outline: none;
   padding: 0px 10px;
 }
 
-.navbar-login-user-btn-icon {
+.menubar-login-user-btn-icon {
   color: var(--white);
   font-size: 30px;
 }
 
-.navbar-login-user-wrapper {
+.menubar-login-user-wrapper {
   display: flex;
   flex-direction: column;
   font-family: 'Spartan', sans-serif;
 }
 
-.navbar-login-user-greetings {
+.menubar-login-user-greetings {
   font-size: 15px;
   letter-spacing: 2px;
   font-weight: 400;
   color: var(--white);
 }
 
-.navbar-login-user-name {
+.menubar-login-user-name {
   font-size: 18px;
   font-weight: 600;
   color: var(--white);
 }
 
-.navbar-menu-btn-wrapper {
+.menubar-menu-btn-wrapper {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
 }
 
-/* ---------- navbar menu buttons ---------- */
-.navbar-menu-btn {
+/* ---------- menubar menu buttons ---------- */
+.menubar-menu-btn {
   background-color: var(--white);
   border: 0px;
   outline: none;
@@ -114,42 +114,42 @@
   width: 44px;
 }
 
-.navbar-menu-btn-icon {
+.menubar-menu-btn-icon {
   font-size: 20px;
   color: var(--blue);
 }
 
 /* ---------- menubar ---------- */
 
-.menubar-container {
+.navbar-container {
   display: flex;
   justify-content: center;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.menubar-item-wrapper {
+.navbar-item-wrapper {
   display: flex;
   flex-direction: row;
   column-gap: 40px;
   padding: 10px 0px;
 }
 
-.menubar-item-link {
+.navbar-item-link {
   text-decoration: none;
   color: var(--black);
 }
 
-.menubar-item {
+.navbar-item {
   font-size: 15px;
   font-weight: 600;
   font-family: 'Spartan', sans-serif;
 }
 
-.menubar-item.active {
+.navbar-item.active {
   color: var(--blue);
 }
 
-.menubar-item.active::after {
+.navbar-item.active::after {
   content: "";
   background-color: var(--blue);
   width: 60%;

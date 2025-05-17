@@ -1,24 +1,30 @@
-import React from "react";
-import Searchbar from "./Searchbar";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar() {const [activePage, setActivePage] = useState("HOME");
+
+  const handleLinkClick = (currPage) => {
+    setActivePage(currPage);
+  };
+
+  const menuItems = ["HOME", "SHOP", "BLOG", "ABOUT", "CONTACT"];
+
   return (
-    <section>
-      <div className="navbar-wrapper">
-        <span className="navbar-logo">Shopworm.</span>
-        <Searchbar />
-        <div className="navbar-login-wrapper">
-          <button className="navbar-login-user-btn"><i className="fa-solid fa-user navbar-login-user-btn-icon"></i></button>
-          <div className="navbar-login-user-wrapper">
-            <span className="navbar-login-user-greetings">Hello,</span>
-            <span className="navbar-login-user-name">SignUp</span>
-          </div>
-        </div>
-        <div className="navbar-menu-btn-wrapper">
-          <button className="navbar-menu-btn"><i className="fa-solid fa-heart navbar-menu-btn-icon"></i></button>
-          <button className="navbar-menu-btn"><i className="fa-solid fa-cart-shopping navbar-menu-btn-icon"></i></button>
-        </div>
+    <div className="navbar-container">
+      <div className="navbar-item-wrapper">
+        {menuItems.map((item) => (
+          <Link to={`/${item.toLowerCase()}`} className="navbar-item-link" key={item}>
+            <span
+              className={`navbar-item ${activePage === item ? "active" : ""}`}
+              onClick={() => handleLinkClick(item)}
+              id={item}
+            >
+              {item}
+            </span>
+          </Link>
+        ))}
       </div>
-    </section>
+    </div>
   );
+  
 }

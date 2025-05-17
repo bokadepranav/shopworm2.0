@@ -1,30 +1,24 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import Searchbar from "./Searchbar";
 
 export default function Menubar() {
-  const [activePage, setActivePage] = useState("HOME");
-
-  const handleLinkClick = (currPage) => {
-    setActivePage(currPage);
-  };
-
-  const menuItems = ["HOME", "SHOP", "BLOG", "ABOUT", "CONTACT"];
-
   return (
-    <div className="menubar-container">
-      <div className="menubar-item-wrapper">
-        {menuItems.map((item) => (
-          <Link to={`/${item.toLowerCase()}`} className="menubar-item-link" key={item}>
-            <span
-              className={`menubar-item ${activePage === item ? "active" : ""}`}
-              onClick={() => handleLinkClick(item)}
-              id={item}
-            >
-              {item}
-            </span>
-          </Link>
-        ))}
+    <section>
+      <div className="menubar-wrapper">
+        <span className="menubar-logo">Shopworm.</span>
+        <Searchbar />
+        <div className="menubar-login-wrapper">
+          <button className="menubar-login-user-btn"><i className="fa-solid fa-user menubar-login-user-btn-icon"></i></button>
+          <div className="menubar-login-user-wrapper">
+            <span className="menubar-login-user-greetings">Hello,</span>
+            <span className="menubar-login-user-name">SignUp</span>
+          </div>
+        </div>
+        <div className="menubar-menu-btn-wrapper">
+          <button className="menubar-menu-btn"><i className="fa-solid fa-heart menubar-menu-btn-icon"></i></button>
+          <button className="menubar-menu-btn"><i className="fa-solid fa-cart-shopping menubar-menu-btn-icon"></i></button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
