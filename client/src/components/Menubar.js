@@ -5,7 +5,7 @@ export default function Menubar() {
   return (
     <section>
       <div className="menubar-wrapper background-color-blue">
-        <span className="menubar-logo heading-1 color-white">Shopworm.</span>
+        <span className="menubar-logo heading-1 bold color-white">Shopworm.</span>
         <Searchbar />
         <div className="menubar-login-wrapper">
           <button className="menubar-login-user-btn background-color-blue"><i className="fa-solid fa-user menubar-login-user-btn-icon color-white"></i></button>
