@@ -72,6 +72,11 @@ a {
   line-height: 22px;
 }
 
+.text-small {
+  font-size: 12px;
+  line-height: 18px;
+}
+
 .bold {
   font-weight: 600;
 }   
@@ -285,4 +290,26 @@ a {
   padding: 14px 80px 14px 65px;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+/* ---------- category banner ---------- */
+
+.home-category-banner-wrapper {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.category-banner-wrapper {
+  height: 225px;
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  column-gap: 20px;
 }
