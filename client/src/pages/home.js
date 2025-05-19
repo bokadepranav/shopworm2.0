@@ -6,6 +6,8 @@ import CategoryBanner from "../components/CategoryBanner";
 import categoryBanner1 from '../assets/catalog/catalog-banner-1.jpg';
 import categoryBanner2 from '../assets/catalog/catalog-banner-2.jpg';
 import categoryBanner3 from '../assets/catalog/catalog-banner-3.jpg';
+import HeadingDescription from "../components/HeadingDescription";
+import ProductCard from "../components/ProductCard";
 
 export default function Home() {
   return (
@@ -39,6 +41,12 @@ export default function Home() {
         <CategoryBanner backgroundImage={`url(${categoryBanner2})`} categoryText={"WOMEN'S FASHION"} categoryDiscount={65} categoryDescription={"Shoes & Backpacks"}/>
         <CategoryBanner backgroundImage={`url(${categoryBanner3})`} categoryText={"TRENDY GLASSES"} categoryDiscount={50} categoryDescription={"Fashionable Glasses"}/>
       </div>
+
+      {/* new arrivals section */}
+      <HeadingDescription heading={"New Arrivals"} description={"Summer Collection New Modern Design"} />
+
+      {/* new arrivals products */}
+      <ProductCard />
     </>
   );
 }
