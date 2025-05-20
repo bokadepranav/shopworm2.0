@@ -329,7 +329,7 @@ a {
 .heading-description-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 40px 80px;
+  padding: 40px 80px 0px 80px;
   justify-content: center;
 }
 
@@ -380,4 +380,18 @@ a {
 .star-rating-icon {
   height: 28px;
   width: 120px;
+}
+
+/* ---------- product group ---------- */
+
+.product-group-wrapper {
+  width: 100%;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.product-group-row {
+  row-gap: 40px;
 }

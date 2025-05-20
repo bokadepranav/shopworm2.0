@@ -3,6 +3,9 @@ import productImage from "../assets/products/bags/3.jpg";
 import StarRating from "./StarRating";
 
 export default function ProductCard(props) {
+  const currency_map = {
+    "USD": "$"
+  }
   return (
     <div className="product-card-wrapper">
       <img
@@ -18,7 +21,7 @@ export default function ProductCard(props) {
         <div className="product-card-details">
           <StarRating rating={props.rating} />
           <span className="product-card-price heading-6 text-font color-blue bolder">
-            {props.priceCurrency}{props.price}
+            {currency_map[props.priceCurrency]}{props.price}
           </span>
         </div>
         <i class="fa-solid fa-cart-shopping product-card-cart-icon text-center color-blue background-color-light-blue"></i>
