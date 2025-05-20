@@ -10,15 +10,15 @@ export default function ProductCard(props) {
         alt="product"
         className="product-card-image mb-3"
       />
-      <span className="text-font text color-grey mb-1">adidas</span>
+      <span className="text-font text color-grey mb-1">{props.brand}</span>
       <span className="heading-6 bolder color-black text-font mb-1">
-        Men's fashion T-shirt
+        {props.title}
       </span>
       <div className="product-card-details-wrapper">
         <div className="product-card-details">
-          <StarRating rating={5} />
+          <StarRating rating={props.rating} />
           <span className="product-card-price heading-6 text-font color-blue bolder">
-            $78
+            {props.priceCurrency}{props.price}
           </span>
         </div>
         <i class="fa-solid fa-cart-shopping product-card-cart-icon text-center color-blue background-color-light-blue"></i>

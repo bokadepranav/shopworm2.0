@@ -46,7 +46,7 @@ export default function Home() {
       <HeadingDescription heading={"New Arrivals"} description={"Summer Collection New Modern Design"} />
 
       {/* new arrivals products */}
-      <ProductCard />
+      <ProductCard brand={"gucci"} title={"Brown Quilted Satchel"} rating={4.25} priceCurrency={"$"} price={78} />
     </>
   );
 }
