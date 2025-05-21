@@ -7,7 +7,6 @@ import categoryBanner1 from "../assets/catalog/catalog-banner-1.jpg";
 import categoryBanner2 from "../assets/catalog/catalog-banner-2.jpg";
 import categoryBanner3 from "../assets/catalog/catalog-banner-3.jpg";
 import HeadingDescription from "../components/HeadingDescription";
-import ProductCard from "../components/ProductCard";
 import ProductGroup from "../components/ProductGroup";
 
 export default function Home() {
@@ -787,7 +786,7 @@ export default function Home() {
       />
 
       {/* new arrivals products */}
-      <ProductGroup products={data.products} length={8} />
+      <ProductGroup products={data.products} length={80} />
     </>
   );
 }

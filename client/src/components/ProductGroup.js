@@ -14,6 +14,7 @@ export default function ProductGroup(props) {
               rating={item.star_rating}
               priceCurrency={item.price_currency}
               price={item.price}
+              imgPath={item.imgPath}
             />
           </div>);
         })}

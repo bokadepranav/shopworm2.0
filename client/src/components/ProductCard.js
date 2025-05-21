@@ -1,5 +1,4 @@
 import React from "react";
-import productImage from "../assets/products/bags/3.jpg";
 import StarRating from "./StarRating";
 
 export default function ProductCard(props) {
@@ -9,7 +8,7 @@ export default function ProductCard(props) {
   return (
     <div className="product-card-wrapper">
       <img
-        src={productImage}
+        src={props.imgPath}
         alt="product"
         className="product-card-image mb-3"
       />
