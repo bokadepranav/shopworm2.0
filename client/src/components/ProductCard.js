@@ -13,7 +13,7 @@ export default function ProductCard(props) {
         className="product-card-image mb-3"
       />
       <span className="text-font text color-grey mb-1">{props.brand}</span>
-      <span className="heading-6 bolder color-black text-font mb-1">
+      <span className="ellepsis-text heading-6 bolder color-black text-font mb-1">
         {props.title}
       </span>
       <div className="product-card-details-wrapper">
