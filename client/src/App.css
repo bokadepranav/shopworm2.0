@@ -326,7 +326,7 @@ a {
   justify-content: space-between;
 }
 
-.category-banner-wrapper {
+.small-banner-wrapper {
   height: 225px;
   width: 400px;
   padding: 20px;
@@ -414,7 +414,7 @@ a {
 
 /* ---------- offer banner ---------- */
 
-.offer-banner-wrapper {
+.full-banner-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
