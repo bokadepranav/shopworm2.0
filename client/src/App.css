@@ -9,6 +9,7 @@
   --grey : #465b52;
   --light-grey: #cce7d0;
   --light-blue: #dce9ff;
+  --red : #ef3636;
 }
 
 a {
@@ -31,6 +32,10 @@ a {
   color: var(--grey);
 }
 
+.color-red {
+  color: var(--red);
+}
+
 .background-color-blue {
   background-color: var(--blue);
 }
@@ -41,6 +46,10 @@ a {
 
 .background-color-light-blue {
   background-color: var(--light-blue);
+}
+
+.border-color-white {
+  border-color: var(--white);
 }
 
 .heading-1 {
@@ -401,4 +410,19 @@ a {
 
 .product-group-row {
   row-gap: 40px;
+}
+
+/* ---------- offer banner ---------- */
+
+.offer-banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

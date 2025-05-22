@@ -8,6 +8,7 @@ import categoryBanner2 from "../assets/catalog/catalog-banner-2.jpg";
 import categoryBanner3 from "../assets/catalog/catalog-banner-3.jpg";
 import HeadingDescription from "../components/HeadingDescription";
 import ProductGroup from "../components/ProductGroup";
+import OfferBanner from "../components/OfferBanner";
 
 export default function Home() {
   const data = {
@@ -785,8 +786,18 @@ export default function Home() {
         description={"Summer Collection New Modern Design"}
       />
 
-      {/* new arrivals products */}
-      <ProductGroup products={data.products} length={80} />
+      <ProductGroup products={data.products} length={8} />
+
+      {/* offer banner */}
+      <OfferBanner />
+
+      {/* featured products section */}
+      <HeadingDescription
+        heading={"Featured Products"}
+        description={"Summer Collection New Modern Design"}
+      />
+
+      <ProductGroup products={data.products} length={8} />
     </>
   );
 }
