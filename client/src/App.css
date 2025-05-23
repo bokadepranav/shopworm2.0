@@ -48,6 +48,10 @@ a {
   background-color: var(--light-blue);
 }
 
+.background-color-transparent {
+  background-color: transparent;
+}
+
 .border-color-white {
   border-color: var(--white);
 }
@@ -441,6 +445,9 @@ a {
 .medium-banner-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
   width: 635px;
   height: 375px;
   background-size: cover;
