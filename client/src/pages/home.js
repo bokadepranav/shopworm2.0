@@ -9,6 +9,7 @@ import categoryBanner3 from "../assets/catalog/catalog-banner-3.jpg";
 import HeadingDescription from "../components/HeadingDescription";
 import ProductGroup from "../components/ProductGroup";
 import FullBanner from "../components/Banner/FullBanner";
+import MediumBanner from "../components/Banner/MediumBanner";
 
 export default function Home() {
   const data = {
@@ -798,6 +799,13 @@ export default function Home() {
       />
 
       <ProductGroup products={data.products} length={8} />
+
+      {/* medium banner section */}
+
+      <div className="medium-banner-section">
+        <MediumBanner />
+        <MediumBanner />
+      </div>
     </>
   );
 }

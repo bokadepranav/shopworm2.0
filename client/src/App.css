@@ -426,3 +426,23 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* ---------- medium banner section ---------- */
+
+.medium-banner-section {
+  display: flex;
+  width: 100%;
+  padding: 40px 80px;
+  justify-content: space-between;
+}
+
+/* ---------- medium banner ---------- */
+
+.medium-banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 635px;
+  height: 375px;
+  background-size: cover;
+  background-position: center;
+}
