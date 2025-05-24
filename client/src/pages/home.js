@@ -10,6 +10,7 @@ import HeadingDescription from "../components/HeadingDescription";
 import ProductGroup from "../components/ProductGroup";
 import FullBanner from "../components/Banner/FullBanner";
 import MediumBanner from "../components/Banner/MediumBanner";
+import NewsLetter from "../components/Banner/NewsLetter";
 
 export default function Home() {
   const data = {
@@ -801,11 +802,13 @@ export default function Home() {
       <ProductGroup products={data.products} length={8} />
 
       {/* medium banner section */}
-
       <div className="medium-banner-section">
         <MediumBanner />
         <MediumBanner />
       </div>
+
+      {/* news letter section */}
+      <NewsLetter />
     </>
   );
 }
