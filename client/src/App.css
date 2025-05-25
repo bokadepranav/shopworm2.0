@@ -6,11 +6,12 @@
   --blue : #2370f4;
   --white : white;
   --black : #1a1a1a;
-  --grey : #465b52;
+  --grey : #818ea0;
   --light-grey: #cce7d0;
   --light-blue: #dce9ff;
   --red : #ef3636;
   --dark-blue : #041e42;
+  --yellow : #ffbd27;
 }
 
 a {
@@ -35,6 +36,14 @@ a {
 
 .color-red {
   color: var(--red);
+}
+
+.color-light-grey {
+  color: var(--grey);
+}
+
+.color-yellow {
+  color: var(--yellow);
 }
 
 .background-color-blue {
@@ -461,4 +470,17 @@ a {
   height: 160px;
   width: 100%;
   background-color: var(--dark-blue);
+  padding: 40px 80px;
+}
+
+.news-letter-left-container, .news-letter-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.news-letter-input {
+  width: 410px;
+  padding: 10px;
 }
