@@ -6,6 +6,10 @@ import SmallBanner from "../components/Banner/SmallBanner";
 import categoryBanner1 from "../assets/catalog/catalog-banner-1.jpg";
 import categoryBanner2 from "../assets/catalog/catalog-banner-2.jpg";
 import categoryBanner3 from "../assets/catalog/catalog-banner-3.jpg";
+
+import medBannerImg1 from '../assets/banner/b17.jpg'
+import medBannerImg2 from '../assets/banner/1.jpg'
+
 import HeadingDescription from "../components/HeadingDescription";
 import ProductGroup from "../components/ProductGroup";
 import FullBanner from "../components/Banner/FullBanner";
@@ -803,8 +807,8 @@ export default function Home() {
 
       {/* medium banner section */}
       <div className="medium-banner-section">
-        <MediumBanner />
-        <MediumBanner />
+        <MediumBanner bannerTag={"crazy deals"} bannerTitle={"buy 1 get 1 free"} bannerDesc={"The best classic dress is on sale at cara"} bannerImg={medBannerImg1} />
+        <MediumBanner bannerTag={"spring / summer"} bannerTitle={"upcoming season"} bannerDesc={"The best classic dreas is on sale at cara"} bannerImg={medBannerImg2} />
       </div>
 
       {/* news letter section */}
