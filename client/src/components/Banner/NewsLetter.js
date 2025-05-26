@@ -23,8 +23,9 @@ export default function NewsLetter() {
           <input
             type="text"
             placeholder="Your Email Address"
-            className="text-font heading-6 color-grey news-letter-input"
+            className="text-font text color-grey news-letter-input"
           />
+          <button className="btn btn-primary text-font bold text color-white news-letter-btn">Sign Up</button>
         </div>
       </div>
     </div>

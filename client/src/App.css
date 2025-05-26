@@ -473,7 +473,7 @@ a {
   padding: 40px 80px;
 }
 
-.news-letter-left-container, .news-letter-right-container {
+.news-letter-left-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -483,4 +483,27 @@ a {
 .news-letter-input {
   width: 410px;
   padding: 10px;
+  height: 45px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+}
+
+
+.news-letter-right-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.news-letter-btn {
+  padding: 10px 20px;
+  height: 45px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
