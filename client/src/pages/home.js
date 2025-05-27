@@ -792,7 +792,7 @@ export default function Home() {
         description={"Summer Collection New Modern Design"}
       />
 
-      <ProductGroup products={data.products} length={8} />
+      <ProductGroup products={data.products} length={12} />
 
       {/* offer banner */}
       <FullBanner />
