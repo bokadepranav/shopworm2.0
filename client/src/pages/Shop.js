@@ -8,7 +8,7 @@ export default function Shop(props) {
   return (
     <div>
       {/* page header banner */}
-      <PageHeadBanner headerTitle="#stayhome" headerSubTitle="Save more with coupons & upto 70% off!" />
+      <PageHeadBanner headerTitle="#stayhome" headerSubTitle="Save more with coupons & upto 70% off!" backgroundImage="../assets/banner/b1.jpg" />
     
       {/* shop product */}
       <HeadingDescription heading="New Arrivals" description="Get upto 70% off on all fashion brands!" />
