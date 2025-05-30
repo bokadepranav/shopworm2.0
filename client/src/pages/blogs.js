@@ -1,7 +1,7 @@
 import React from 'react'
 import PageHeadBanner from '../components/Banner/PageHeadBanner'
 import NewsLetter from '../components/Banner/NewsLetter'
-import backgroundImage from '../assets/banner/b2.jpg'
+import backgroundImage from '../assets/blog/banner.jpg'
 
 export default function Blogs() {
   return (
