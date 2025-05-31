@@ -12,6 +12,16 @@
   --red : #ef3636;
   --dark-blue : #041e42;
   --yellow : #ffbd27;
+  --dark-aqua : #088178;
+
+  /* property color about page */
+
+  --prop-sky-blue : #d1e8f2;
+  --prop-pink : #fddde4;
+  --prop-green : #cdebbc;
+  --prop-violet : #cdd4f8;
+  --prop-purple : #f6dbf6;
+  --prop-peach : #fff2ef; 
 }
 
 a {
@@ -44,6 +54,10 @@ a {
 
 .color-yellow {
   color: var(--yellow);
+}
+
+.color-dark-aqua {
+  color: var(--dark-aqua);
 }
 
 .background-color-blue {
@@ -518,4 +532,37 @@ a {
   align-items: center;
   background-size: cover;
   background-position: top;
+}
+
+/* ---------- about page feature group ---------- */
+
+.feature-group-wrapper {
+  display: flex;
+  padding: 40px 80px;
+  justify-content: space-between;
+}
+
+/* ---------- feature card ---------- */
+
+.feature-card-wrapper {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 10px 10px 54px var(--light-grey);
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card-image {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-card-text {
+  border-radius: 4px;
+  padding: 9px 8px 6px 8px;
+  background-color: var(--light-grey);
 }
