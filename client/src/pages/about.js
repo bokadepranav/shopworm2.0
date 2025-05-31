@@ -16,6 +16,11 @@ export default function About() {
 
       <div className="feature-group-wrapper">
         <FeatureCard featureImage={featureImage1} featureTitle="Free Shipping" featureBackgroundColor="var(--prop-sky-blue)" />
+        <FeatureCard featureImage={featureImage2} featureTitle="Online Order" featureBackgroundColor="var(--prop-pink)" />
+        <FeatureCard featureImage={featureImage3} featureTitle="Save Money" featureBackgroundColor="var(--prop-green)" />
+        <FeatureCard featureImage={featureImage4} featureTitle="Promotions" featureBackgroundColor="var(--prop-violet)" />
+        <FeatureCard featureImage={featureImage5} featureTitle="Happy Sell" featureBackgroundColor="var(--prop-purple)" />
+        <FeatureCard featureImage={featureImage6} featureTitle="24/7 Support" featureBackgroundColor="var(--prop-peach)" />
       </div>
     </div>
   )

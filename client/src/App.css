@@ -548,8 +548,8 @@ a {
   width: 180px;
   text-align: center;
   padding: 25px 15px;
-  box-shadow: 10px 10px 54px var(--light-grey);
-  border: 1px solid var(--grey);
+  box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+  border: 1px solid var(--light-grey);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
